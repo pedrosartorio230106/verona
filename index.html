@@ -7,7 +7,6 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap');
 
-  /* Reset and base */
   *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -31,7 +30,7 @@
     outline: none;
   }
 
-  /* Navbar */
+
 
   nav {
     position: sticky;
@@ -80,7 +79,6 @@
     color: #7a2f01;
   }
 
-  /* Hero Section */
 
   header {
     background: linear-gradient(rgba(104, 50, 0, 0.45), rgba(104, 50, 0, 0.45)), url('https://cdn.pixabay.com/photo/2017/11/01/17/45/verona-2904321_1280.jpg') no-repeat center center/cover;
@@ -111,7 +109,7 @@
     text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
   }
 
-  /* Main Container */
+
 
   main {
     max-width: 1100px;
@@ -136,8 +134,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
   }
-
-  /* History with timeline */
+/
 
   .history-timeline {
     position: relative;
@@ -190,7 +187,7 @@
     line-height: 1.65;
   }
 
-  /* Attractions */
+  
 
   .attractions {
     display: grid;
@@ -238,7 +235,7 @@
     line-height: 1.5;
   }
 
-  /* Gallery Carousel using JS */
+
 
   .gallery-container {
     position: relative;
@@ -285,7 +282,7 @@
     outline: none;
   }
 
-  /* Map Section */
+  
 
   .map-section iframe {
     border-radius: 14px;
@@ -301,7 +298,7 @@
     outline: none;
   }
 
-  /* Quote Section */
+
 
   .quote-section {
     background: #f6e7d9;
@@ -324,7 +321,7 @@
     color: #a84300;
   }
 
-  /* Footer */
+
 
   footer {
     background-color: #a84300;
@@ -360,7 +357,7 @@
     fill: currentColor;
   }
 
-  /* Back to Top button */
+
 
   #backToTop {
     position: fixed;
@@ -386,7 +383,7 @@
     outline: none;
   }
 
-  /* Responsive */
+
 
   @media (max-width: 768px) {
     header h1 {
@@ -421,7 +418,7 @@
       justify-content: center;
     }
 
-    /* We could add a hamburger menu here if extended further */
+   
   }
 
 </style>
@@ -559,7 +556,7 @@ Verona também possui outros pontos de interesse históricos, como o Teatro Roma
 <button id="backToTop" aria-label="Voltar ao topo" title="Voltar ao topo">&#8679;</button>
 
 <script>
-  // Back to top button
+
   const backToTopBtn = document.getElementById('backToTop');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 400) {
@@ -574,7 +571,7 @@ Verona também possui outros pontos de interesse históricos, como o Teatro Roma
     backToTopBtn.blur();
   });
 
-  // Gallery carousel
+
   const gallery = document.querySelector('.gallery');
   const images = gallery.querySelectorAll('img');
   const prevBtn = document.getElementById('prevBtn');
@@ -600,7 +597,7 @@ Verona também possui outros pontos de interesse históricos, como o Teatro Roma
     nextBtn.blur();
   });
 
-  // Keyboard support for gallery arrows
+
   prevBtn.addEventListener('keydown', e => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
@@ -614,7 +611,7 @@ Verona também possui outros pontos de interesse históricos, como o Teatro Roma
     }
   });
 
-  // Start showing the first image
+
   showImage(0);
 </script>
 </body>
